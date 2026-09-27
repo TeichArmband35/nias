@@ -1,4 +1,4 @@
-# nina-tts-alert
+# NIAS
 A Node.js server that fetches official alert messages from the BBK (Bundesamt für 
 Bevölkerungsschutz und Katastrophenhilfe) via the NINA API, converts them to speech, 
 and saves the output as output.mp3. The generated audio can be played through an 
