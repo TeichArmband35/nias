@@ -32,7 +32,7 @@ function speakRadio(text, schweregrad, done, TTSoverride, testaktv) {
         .replace(/"/g, '\\"')
         .replace(/\n/g, " ");
 
-    const ttsBin = "/home/pille/.pyenv/shims/tts"; // Replace this with your path of the installation of tts
+    const ttsBin = "/home/yourname/.pyenv/shims/tts"; // Replace this with your path of the installation of tts
 
     const cmd = `"${ttsBin}" --text "${safeText}" \
 --model_name "tts_models/de/thorsten/tacotron2-DDC" \
