@@ -1,4 +1,7 @@
 # NIAS
+
+![NIAS Banner schmall](images/NIASbanner.png)
+
 A Node.js server that fetches official alert messages from the BBK (Bundesamt für 
 Bevölkerungsschutz und Katastrophenhilfe) via the NINA API, converts them to speech, 
 and saves the output as output.mp3. The generated audio can be played through an 
@@ -244,9 +247,11 @@ to allow requests from the local network. The second step is to build an "interc
 As of the third step, you will have to program the `esp32` so that it will automatically fetch `localhost:`[Insert here the port the Express server is using]`/server/nina/audio/Warnungen`. If `neueWarnung = true` and `datum` is not the last logged date, make the esp32 use `localhost:`[Insert here the port the Express server is using]`/server/nina/audio/Warnungen/Download` to download the output.mp3 file. In the last step, program the esp32 to automatically play this file. That's it. Everything else is handled server side.
 
 ## Legal Notice
-This project is intended for **private, non-commercial use only** (e.g. home intercom systems).
-The author is not responsible for any misuse of this software.
-By using this project, you agree to comply with all applicable local laws and regulations.
-This project is not affiliated with, endorsed by, or connected to the BBK or any government agency.
+**You are allowed to use NIAS for private and/or non-commercial use. Using NIAS for commercial purposes is strictly prohibited. NIAS is made to help people access information about warnings and to support the BBK; NIAS is made for civil defense use.
+NIAS-Radio is a private, independent information service and has no connection with the Federal Office for Civil Protection and Disaster Response (BBK) or any other government warning and disaster management authority.
+The warnings and information provided via NIAS are intended solely as additional assistance and do not replace official warnings or instructions from authorities and emergency services.
+We cannot guarantee that warnings will be transmitted in full, accurately or at all times. Technical faults, outages or delays may occur. In an emergency, official warnings and instructions from the relevant authorities always take precedence.**
+
 
 ![alt + f4](server/gifs/exit.gif)
+![NIAS Banner big](images/NIASbanner_big.png)
