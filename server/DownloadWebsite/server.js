@@ -22,9 +22,9 @@ var SeverityOfWarning = [];
 
 // CONFIG
 const tokens = [
-  "Insert here first encrypted password", // Token for ninaPush
-  "Insert here second encrypted password", // Token for ninaPush online server status
-  "Insert here third encrypted password", // Token for ninaPush Transcritpt etc.
+  "$2b$12$VZV90SjGFLLsIbvdCHq2befIz3Oq343z8Mssdh4A2bIwsLG6LOPt.", // Token for ninaPush
+  "$2b$12$VZV90SjGFLLsIbvdCHq2befIz3Oq343z8Mssdh4A2bIwsLG6LOPt.", // Token for ninaPush online server status
+  "$2b$12$VZV90SjGFLLsIbvdCHq2befIz3Oq343z8Mssdh4A2bIwsLG6LOPt.", // Token for ninaPush Transcritpt etc.
 ];
 // No config behind this point, keine config nach diesem punkt leeel
 
