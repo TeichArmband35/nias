@@ -69,6 +69,8 @@ errors **in English is not planned but may come in the future**.
 - `tts: dforce`: Deactivates TTS Force
 - `wart: force`: Forces an maintenance
 - `testsys`: Issues 4 test-warnings in 20 minutes (4x5)
+- `custannc: start`: Issues a custom announcement from `custannctext.txt`
+- `changegong`: Changes the gong used for custom announcements
 
 ### For ~/server/DownloadWebsite/server.js
 - `exit`: Exits the program, so you don't have to close and re-open the console
@@ -132,6 +134,11 @@ the current one has been issued for the area. It can also be activated manually
 ### Maintenance
 The program will reset itself, in order to avoid a memory leak
 
+### Custom Announcement
+Running `custannc: start` causes NIAS to read out the text currently stored in
+`custannctext.txt` using the TTS system. The gong played before the announcement can be
+changed at any time with `changegong`.
+
 ### TTS Cooldown
 After a warning has been processed, the TTS system will not process any other warnings 
 for 5 minutes. This cooldown can only be bypassed by the TTS Override or by TTS Force.
@@ -170,6 +177,10 @@ JSON response `downloadPath: /server/nina/audio/Warnungen/Download` or go direct
 ## Configuration
 
 ### Configuration in ~/server/server.js
+
+#### Using NIAS with NIAS-Radio
+To use NIAS with NIAS-Radio, set the variable `useNIASradio` to `true`. After that, place the `NIAS-Radio` folder in `~/server`.
+Congrats! Now you combined NIAS with [NIAS-Radio](https://github.com/TeichArmband35/nias-radio).
 
 #### Change of the API
 If the ARS code is for the normal API, copy & paste it into the variable `ARSkeintest` 
