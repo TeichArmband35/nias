@@ -206,6 +206,16 @@ The variable should be changed to something like this:
 
 > Note: The variable has to be directly the path to `tts` which is `Coqui TTS`.
 
+### Configuration in ~/server/warnungsttsRadio.js
+
+#### ttsBin
+The variable `ttsBin` must be changed, so that the text can be converted into speech.
+It contains the path of the installation of `Coqui TTS`. 
+The variable should be changed to something like this:
+`/home/yourname/.pyenv/shims/tts`
+
+> Note: The variable has to be directly the path to `tts` which is `Coqui TTS`.
+
 ### Change of the Tokens
 This program uses `bcryptjs` for tokens, so that only the program itself can push data to the Express server.
 To create the tokens, run `~/server/DownloadWebsite/tokenCreate.js`. Before you run it, make sure you change the variable tokenInput to your password.
