@@ -1,6 +1,6 @@
 # NIAS
 
-![NIAS Banner schmall](images/NIASbanner.png)
+![NIAS Banner schmall](https://github.com/TeichArmband35/nias-logos/blob/main/Logos/NIASbanner.png)
 
 A Node.js server that fetches official alert messages from the BBK (Bundesamt für 
 Bevölkerungsschutz und Katastrophenhilfe) via the NINA API, converts them to speech, 
@@ -275,4 +275,4 @@ We cannot guarantee that warnings will be transmitted in full, accurately or at 
 
 
 ![alt + f4](server/gifs/exit.gif)
-![NIAS Banner big](images/NIASbanner_big.png)
+![NIAS Banner big](https://github.com/TeichArmband35/nias-logos/blob/main/Logos/NIASbanner_big.png)
